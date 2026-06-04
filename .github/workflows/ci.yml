@@ -25,4 +25,8 @@ jobs:
           dvc remote modify dagshub password $DAGSHUB_TOKEN
           dvc pull
       - name: Run MLflow project
+        env:
+          MLFLOW_TRACKING_URI: https://dagshub.com/roiskhoiron/Customer-Churn-EDA.mlflow
+          MLFLOW_TRACKING_USERNAME: roiskhoiron
+          MLFLOW_TRACKING_PASSWORD: ${{ secrets.DAGSHUB_TOKEN }}
         run: mlflow run MLProject --env-manager=local
