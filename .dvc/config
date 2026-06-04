@@ -6,3 +6,12 @@
     auth = basic
     user = roiskhoiron
     password = 72ea8c5251856c29972ca84a12ff422323986208
+
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/roiskhoiron/Customer-Churn-EDA
+export MLFLOW_TRACKING_USERNAME=roiskhoiron
+export MLFLOW_TRACKING_PASSWORD=72ea8c5251856c29972ca84a12ff422323986208
+
+
+mlflow models serve -m "models:/SMSML_Customer_Churn_Tuning/1" --port 5002 --no-conda
+
