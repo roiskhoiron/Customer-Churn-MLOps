@@ -3,4 +3,4 @@ outs:
   size: 2370040
   nfiles: 5
   hash: md5
-  path: namadataset_preprocessing
+  path: MLProject/namadataset_preprocessing
