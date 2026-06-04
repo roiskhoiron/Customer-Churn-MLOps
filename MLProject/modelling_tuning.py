@@ -5,7 +5,7 @@ from sklearn.model_selection import RandomizedSearchCV
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 warnings.filterwarnings('ignore')
 
-mlflow.set_tracking_uri("http://127.0.0.1:5000/")
+mlflow.set_tracking_uri("https://dagshub.com/roiskhoiron/Customer-Churn-EDA.mlflow")
 d = os.path.dirname(os.path.abspath(__file__))
 pre = os.path.join(d, "namadataset_preprocessing")
 mdir = os.path.join(d, "models")
