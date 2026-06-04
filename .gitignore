@@ -1,2 +1,4 @@
 /namadataset_preprocessing
+MLProject/models/
+mlflow.db
 .venv/
