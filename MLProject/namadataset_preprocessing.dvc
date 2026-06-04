@@ -1,0 +1,6 @@
+outs:
+- md5: 82fa50fb473f9be1359662841a9149ac.dir
+  size: 2370040
+  nfiles: 5
+  hash: md5
+  path: namadataset_preprocessing
